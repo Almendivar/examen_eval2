@@ -60,12 +60,22 @@ public class Jugador {
 		return "Jugador [nombre=" + nombre + ", dorsal=" + dorsal + ", hab_portero=" + hab_portero + ", hab_disparo="
 				+ hab_disparo + ", vidas=" + vidas + "]";
 	}
-
+	
+	/*
+	 * Pre: ---
+	 * Post: En este método multiplicamos un número aleatrio por la habilidad de disparo que tiene el 
+	 * jugador.
+	 */
 	public int habilidadDisparo() {
 		int z = hab_disparo * (1 + (int)(Math.random()*4));
 		return z;
 	}
 	
+	/*
+	 * Pre: ---
+	 * Post: En este método multiplicamos un número aleatrio por la habilidad de portero que tiene el 
+	 * jugador.
+	 */
 	public int habilidadPorteria() {
 		int z = hab_portero * (1 + (int)(Math.random()*4));
 		return z;

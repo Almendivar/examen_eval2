@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class Main {
 	
+	/*
+	 * Pre: ---
+	 * Post: En este método recibimos el ArrayList y lo ordenamos de forma aleatoria.
+	 */
 	public static ArrayList<Jugador> ordenarArray( ArrayList<Jugador> jugadores) {
 		Jugador borrador = new Jugador(" ", 0, 0, 0, 0 );
 		for (int i = 0; i < jugadores.size(); i++) {
@@ -15,6 +19,12 @@ public class Main {
 		return jugadores;
 	}
 	
+	/*
+	 * Pre: ---
+	 * Post: En este método comparamos las puntaciones obtenidas de la habilidad del portero con la 
+	 * habilidad del disparo y si gana el disparo le quitamos una vida al portero, cuando le quedan 
+	 * 0 vidas es eliminado. Finalmente se muestra al ganador por pantalla.
+	 */
 	public static void rapido( ArrayList<Jugador> jugadores) {
 		int cont = 0;
 		while( jugadores.size() > 1) {
@@ -59,7 +69,9 @@ public class Main {
 	}
 	
 	/*
-	 * En el método main, creamos el ArrayList y 
+	 * Pre: ---
+	 * Post: En el método main, creamos el ArrayList y le mandamos los atributos de la clase Jugador,
+	 * posteriormente llamamos  a los métodos ordenarArray y rapido.
 	 */
 	public static void main(String[]args) {
 		ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
